@@ -106,7 +106,6 @@ Product_Recommendation_System/
 ├── requirements.txt                # Python dependencies
 ├── products_clean.csv              # Product dataset
 ├── config.pkl                      # Configuration file
-├── .env                           # Environment variables (not in repo)
 └── README.md                      # Project documentation
 ```
 
