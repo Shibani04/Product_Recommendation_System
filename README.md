@@ -15,8 +15,8 @@ A smart product recommendation chatbot built with Streamlit and powered by AI. T
 
 * **Frontend** : Streamlit
 * **AI Model** : Groq LLaMA 3.1
-* **NLP** : Sentence Transformers, LangChain
-* **Vector Database** : ChromaDB
+* **Search Engine** : Intelligent Keyword-Based Product Search
+* **Recommendation Logic** : Price Filtering & Rating-Based Ranking
 * **Data Processing** : Pandas, NumPy
 
 ## Installation
@@ -30,7 +30,7 @@ A smart product recommendation chatbot built with Streamlit and powered by AI. T
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Product_Recommendation_System.git
+   git clone https://github.com/Shibani04/Product_Recommendation_System.git
    cd Product_Recommendation_System
    ```
 2. **Create a virtual environment** (recommended)
@@ -46,10 +46,6 @@ A smart product recommendation chatbot built with Streamlit and powered by AI. T
    Create a `.env` file in the project root:
    ```env
    GROQ_API_KEY=your_groq_api_key_here
-   ```
-5. **Download the embedding model** (optional)
-   ```bash
-   python download_model.py
    ```
 
 ## Usage
@@ -107,13 +103,13 @@ Automatically detects price constraints from queries:
 * "under 300"
 * "below 500"
 
-### 3. AI Recommendations
+### 3. AI-Assisted Recommendations
 
 Uses Groq's LLaMA 3.1 model to:
 
-* Understand user intent
-* Provide personalized recommendations
-* Explain why products are suitable
+* Analyze user shopping requirements
+* Recommend suitable products from filtered results
+* Generate natural language explanations
 
 ## Configuration
 
@@ -130,3 +126,36 @@ GROQ_API_KEY=your_api_key_here
 * **AI Model** : llama-3.1-8b-instant
 * **Temperature** : 0.5 (balanced creativity)
 * **Max Tokens** : 800
+
+### My Contributions
+
+- Built the Streamlit conversational shopping assistant
+- Developed keyword-based product retrieval logic
+- Implemented budget-aware product filtering
+- Added rating-based product ranking
+- Integrated Groq LLaMA 3.1 for intelligent recommendations
+- Processed and analyzed the product dataset
+
+### Application Screenshots
+
+#### Conversational Shopping Interface
+
+<img width="1536" height="840" alt="image" src="https://github.com/user-attachments/assets/8fc6de71-b499-403f-b66b-b662ccfa09a9" />
+
+The chatbot provides an interactive shopping experience with product analytics and suggested queries.
+
+---
+
+#### AI-Powered Product Recommendations
+
+<img width="1532" height="835" alt="image" src="https://github.com/user-attachments/assets/867db11b-e931-49e0-b819-c8dba68782f0" />
+
+The system analyzes user requirements and recommends suitable products with explanations generated using Groq LLaMA 3.1.
+
+---
+
+#### Product Search Example
+
+<img width="1533" height="831" alt="image" src="https://github.com/user-attachments/assets/cf601bae-a44c-4ab2-8528-9978fc05a7fb" />
+
+Users can search for products using natural language queries and receive ranked recommendations.
